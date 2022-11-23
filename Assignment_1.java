@@ -5,17 +5,22 @@ import java.util.Scanner;
 public class Assignment_1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub		
-		int principle;
-		int interest;
-		int time;
-		System.out.println("Enter principle, interest, time:");
+		
+		
+		System.out.println("Enter principle,rate, time :");
 		Scanner sc=new Scanner(System.in);
-		principle=sc.nextInt();
-		interest=sc.nextInt();
-		time=sc.nextInt();
-		int si=(principle*interest*time)/100;
-		System.out.println("Interest:"+si);
+		int principle=sc.nextInt();
+		int rate=sc.nextInt();
+		int time=sc.nextInt();
+		
+		int Arr[] = new int[3];
+		
+		Arr[0]= principle;
+		Arr[1]= rate;
+		Arr[2]= time;
+		
+		int si=(Arr[0]*Arr[1]*Arr[2])/100;
+		System.out.println("Interest: "+si);
 	}
 }
 
