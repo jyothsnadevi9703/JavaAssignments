@@ -9,13 +9,25 @@ public class DemoJavaCollection {
 		// TODO Auto-generated method stub
 		
 		//create one object of arraylist class
-		ArrayList list=new ArrayList();
-		Thread t1=new Thread();
-		list.add("Database");
-		list.add(5);
-		list.add('y');
-		list.add(78.9f);
-		list.add(t1);
+//		ArrayList<String> list=new ArrayList();
+		ArrayList<Integer> list=new ArrayList<Integer>();
+
+//		Thread t1=new Thread();
+//		list.add("Database");
+//		list.add("Oracle");
+//		list.add("sql");
+//		list.add("mango db");
+		
+		list.add(1);
+		list.add(2);
+		list.add(7);
+		list.add(4);
+		list.add(4,null);// works on indexing
+		System.out.println(list.isEmpty());
+		System.out.println(list.contains(3));
+		list.remove(3);
+//		list.remove(null);
+		
 		//traversing the list through iterators
 		Iterator itr=list.iterator();
 		//can't use for loop and get(index)method because there is no functionality of single datatype list
