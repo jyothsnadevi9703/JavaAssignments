@@ -1,19 +1,15 @@
+
 package org.example;
 
-/**
- * Hello world!
- *
- */
-public class App 
+
+
+public class App
 {
-    public static int findMax(int arr[])
-    {
-        int max=arr[0];
-        for (int i=0;i<arr.length;i++)
-        {
-            if (max<arr[i])
-                max=arr[i];
+    public static String ReverseString(String name) {
+        String name1 = "";
+        for (int i = name.length() - 1; i >= 0; i--) {
+            name1 += name.charAt(i);
         }
-        return max;
+        return name1;
     }
 }
