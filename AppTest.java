@@ -1,16 +1,20 @@
 package org.example;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
+
 import static junit.framework.Assert.assertEquals;
+/**
+ * Hello world!
+ *
+ */
 
 public class AppTest
 {
-    @org.junit.Test
-    public void findMax()
+    @Test
+    public void testReverseString()
     {
-        assertEquals(9,App.findMax(new int[]{5,3,9,1}));
+        assertEquals("oyj",App.ReverseString(new String("jyo")));
     }
 
 }
+
